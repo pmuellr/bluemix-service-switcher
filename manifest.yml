@@ -1,0 +1,24 @@
+---
+
+# this file is by `cf push` to determine the settings your your app
+
+applications:
+
+# the name of the app that you will use in `cf` commands
+
+- name:    service-switcher
+
+# the indented values are settings for the app they are indented under
+
+  # this is the host name of your app; the app will be available at the url:
+  #   http://<host>.mybluemix.net
+
+  host:    service-switcher-pjm
+
+  # amount of RAM we'll need.  Prolly could get by with less!
+
+  memory:  128M
+
+  # command to run
+
+  command: node server

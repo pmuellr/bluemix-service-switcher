@@ -1,0 +1,8 @@
+{
+    "name":             "bluemix-service-switcher",
+    "dependencies":
+        {
+        "cfenv":        "0.2.x",
+        "express":      "4.6.x"
+        }
+}
