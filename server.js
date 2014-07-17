@@ -42,14 +42,14 @@ function onHomePage(request, response) {
 function getServiceInfo() {
   var serviceA = AppEnv.getService("ServiceA")
   var serviceB = AppEnv.getService("ServiceB")
-  var serviceX = AppEnv.getService(/Service?/) || {name: "(not bound)"}
+  var serviceX = AppEnv.getService(/Service.*/) || {name: "(not bound)"}
   var services = AppEnv.getServices()
 
   var output = []
   output.push("  isLocal?        - " + yesNo(AppEnv.isLocal))
   output.push("  ServiceA bound? - " + yesNo(serviceA))
   output.push("  ServiceB bound? - " + yesNo(serviceB))
-  output.push("  /Service?/      - " + serviceX.name)
+  output.push("  /Service.*/     - " + serviceX.name)
 
   output.push("bound services:")
 
