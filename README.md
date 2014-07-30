@@ -7,6 +7,10 @@ A simple node app to show how to bind to services by name using the
 See the [hello-node](https://github.com/pmuellr/bluemix-hello-node) sample for
 information about using node.js on IBM's [BlueMix](https://bluemix.net/) PaaS.
 
+This app should also run fine on any [Cloud Foundry](http://cloudfoundry.org/)-based
+PaaS.
+
+
 
 install
 --------------------------------------------------------------------------------
